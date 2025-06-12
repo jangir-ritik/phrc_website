@@ -2,6 +2,9 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import clsx from "clsx";
+
+import styles from "@/styles/Header.module.css";
 
 import logo from "@/public/common/phrc_logo.png";
 
@@ -56,27 +59,47 @@ function Header() {
       href: "/contact",
       isActive: false,
       order: 8,
+      unique: true,
     },
   ];
 
   return (
-    <header className="header">
-      <div className="container">
-        <div className="header-logo">
-          <Image src={logo} width={156} alt="PHRC Lifespace Organisation" />
+    <header className={styles.header}>
+      <div className={styles.container}>
+        <div className={styles.headerLogo}>
+          <div className={styles.headerLogoInvisibleHolder} />
+          <Link href="/" aria-label="PHRC Lifespace Organisation - Home">
+            <Image
+              src={logo}
+              width={156}
+              alt="PHRC Lifespace Organisation logo"
+            />
+          </Link>
         </div>
-        <div className="header-nav">
-          <ul>
+        <nav
+          className={styles.headerNav}
+          role="navigation"
+          aria-label="Main navigation"
+        >
+          <ul className={styles.headerNavList}>
             {headerLinks.map((link, index) => (
               <li
                 key={index}
-                className={`header-nav-item ${link.isActive ? "active" : ""}`}
+                className={clsx(styles.headerNavItem, {
+                  [styles.active]: link.isActive,
+                  [styles.unique]: link.unique,
+                })}
               >
-                <Link href={link.href}>{link.label}</Link>
+                <Link
+                  href={link.href}
+                  aria-current={link.isActive ? "page" : undefined}
+                >
+                  {link.label}
+                </Link>
               </li>
             ))}
           </ul>
-        </div>
+        </nav>
       </div>
     </header>
   );

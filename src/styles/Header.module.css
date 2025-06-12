@@ -1,0 +1,73 @@
+.header {
+  background-color: var(--foreground);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  border-bottom: 1px solid var(--primary);
+  color: var(--primary);
+  z-index: 100;
+  position: relative;
+}
+
+.container {
+  container-type: inline-size;
+  container-name: header;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding: 18px 0;
+  position: relative;
+}
+
+/* .headerLogo {
+} */
+
+.headerLogoInvisibleHolder {
+  width: 156px;
+  display: flex;
+  height: 100%;
+}
+
+.headerLogo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 156px;
+  aspect-ratio: 156 / 116;
+  object-fit: contain;
+  display: block;
+}
+
+.headerNav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.headerNavList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.headerNavItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.headerNavItem:hover {
+  background-color: var(--hover);
+  color: var(--primary);
+}
+
+.unique {
+  background-color: var(--primary);
+  color: var(--background);
+}

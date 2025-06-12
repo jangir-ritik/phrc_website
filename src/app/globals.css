@@ -1,7 +1,63 @@
 :root {
-  --forground: #F2F9FF;
-  --background: #FFFFFF;
-  --primary: #2D88D7;
-  --textPrimary: #507EA5;
-  --textSecondary: #0A2A45;
+  --foreground: #f2f9ff;
+  --background: #ffffff;
+  --primary: #2d88d7;
+  --textPrimary: #507ea5;
+  --textSecondary: #0a2a45;
+  --hover: #dcefff;
+}
+
+body,
+html {
+  background-color: var(--background);
+  color: var(--textPrimary);
+  font-family: "Archivo", sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
