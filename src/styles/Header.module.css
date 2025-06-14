@@ -113,6 +113,11 @@
   border-radius: 8px;
 }
 
+.headerNavItem.active.unique {
+  background-color: var(--primary);
+  color: var(--background);
+}
+
 .headerNavItemOpen.active {
   background-color: var(--hover);
   color: var(--primary);
