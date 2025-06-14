@@ -61,3 +61,71 @@
   right: 0;
   bottom: 0;
 }
+
+.image_container_mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .section6_newsletter {
+    padding: 0 24px;
+  }
+
+  .container {
+    padding: 22px 16px;
+    flex-direction: column;
+  }
+
+  .title_container {
+    max-width: 100%;
+  }
+
+  .form_container {
+    flex-direction: column;
+  }
+
+  .form_container button {
+    width: fit-content;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 10px;
+  }
+  .image_container {
+    display: none;
+  }
+
+  .image_container_mobile {
+    width: 100%;
+    height: 250px;
+    display: block;
+    position: relative;
+  }
+
+  .image_container_mobile img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    scale: 1.1;
+    transform-origin: bottom;
+    transform: translateY(-50px);
+  }
+
+  .container {
+    background-image: url("/common/watermark.png");
+    background-size: 80%;
+    background-position: 120% -35%;
+    background-repeat: no-repeat;
+    z-index: 100;
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+  }
+}

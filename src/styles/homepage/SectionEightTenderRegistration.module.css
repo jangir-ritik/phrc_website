@@ -24,3 +24,16 @@
   line-height: 48px;
   font-weight: 400;
 }
+
+@media (max-width: 768px) {
+  .section8_tender_registration {
+    padding: 0 24px;
+  }
+
+  .container {
+    padding: 22px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+}

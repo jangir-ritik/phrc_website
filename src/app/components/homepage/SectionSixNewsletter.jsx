@@ -8,6 +8,9 @@ function SectionSixNewsletter() {
   return (
     <section className={styles.section6_newsletter}>
       <div className={styles.container}>
+        <div className={styles.image_container_mobile}>
+          <Image src={newsletter_image} alt="Newsletter" />
+        </div>
         <div className={styles.title_container}>
           <h2 className={styles.title}>Stay informed, Stay Healthy</h2>
           <p className={styles.description}>

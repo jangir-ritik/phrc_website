@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "@/styles/footer/footer.module.css";
-import logo from "@/public/common/phrc_logo.png";
+import logo from "@/public/common/phrc_logo_footer.png";
 import Button from "@/components/Button";
 import clsx from "clsx";
 import Google from "@/public/footer/google.svg";
