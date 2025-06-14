@@ -122,13 +122,26 @@ function Footer() {
                   <a href="mailto:info@phrclife.com">info@phrclife.com</a>
                 </p>
                 <span>Locate Us</span>
-                <Image
-                  src="/common/location-map.png"
-                  width={200}
-                  height={120}
-                  alt="PHRC Location Map"
-                  className={styles.mapImage}
-                />
+                <div className={styles.mapContainer}>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d945.8673098344657!2d73.93399336959636!3d18.46725099871401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eb9a76325f07%3A0x7cc72d18d8f4d20!2sPHRC%20Lifespace%20Organisation!5e0!3m2!1sen!2sin!4v1710472714346!5m2!1sen!2sin"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="PHRC Location Map"
+                    className={styles.map}
+                  />
+                </div>
+                <p className={styles.address}>
+                  CWX8+4X2, Wadachi Wadi Rd,
+                  <br />
+                  Undri, Pune,
+                  <br />
+                  Maharashtra 412308
+                </p>
               </address>
             </div>
 
