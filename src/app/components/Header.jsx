@@ -8,7 +8,9 @@ import clsx from "clsx";
 import styles from "@/styles/Header.module.css";
 
 import menuIcon from "@/public/common/menu.svg";
+import closeIcon from "@/public/common/cross.svg";
 import logo from "@/public/common/phrc_logo.png";
+import logo_footer from "@/public/common/phrc_logo_footer.png";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -82,7 +84,9 @@ function Header() {
           aria-expanded={isMenuOpen}
           aria-label="Toggle navigation menu"
         >
-          <Image src={menuIcon} width={24} height={24} alt="" />
+          {!isMenuOpen && (
+            <Image src={menuIcon} width={40} height={40} alt="" />
+          )}
         </button>
 
         <nav
@@ -92,14 +96,39 @@ function Header() {
           role="navigation"
           aria-label="Main navigation"
         >
-          <ul className={styles.headerNavList}>
+          <div className={styles.headerNavLogoContainer}>
+            <Image
+              className={
+                isMenuOpen ? styles.headerNavLogoOpen : styles.headerNavLogo
+              }
+              src={logo_footer}
+              width={100}
+              height={90}
+              alt="PHRC Lifespace Organisation logo"
+            />
+            <button
+              className={styles.closeButton}
+              onClick={toggleMenu}
+              aria-label="Close navigation menu"
+            >
+              <Image src={closeIcon} width={40} height={40} alt="" />
+            </button>
+          </div>
+          <ul
+            className={
+              isMenuOpen ? styles.headerNavListOpen : styles.headerNavList
+            }
+          >
             {headerLinks.map((link, index) => (
               <li
                 key={index}
-                className={clsx(styles.headerNavItem, {
-                  [styles.active]: pathname === link.href,
-                  [styles.unique]: link.unique,
-                })}
+                className={clsx(
+                  isMenuOpen ? styles.headerNavItemOpen : styles.headerNavItem,
+                  {
+                    [styles.active]: pathname === link.href,
+                    [styles.unique]: link.unique,
+                  }
+                )}
               >
                 <Link
                   href={link.href}

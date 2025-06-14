@@ -115,8 +115,8 @@
 
   .container {
     background-image: url("/common/watermark.png");
-    background-size: 80%;
-    background-position: 120% -35%;
+    background-size: 90%;
+    background-position: 140% -27%;
     background-repeat: no-repeat;
     z-index: 100;
     pointer-events: none;
