@@ -223,6 +223,50 @@
 }
 
 /* Mobile Responsive Styles */
+@media (max-width: 1200px) {
+  .footer {
+    margin-top: 132px;
+    padding: 0 24px;
+  }
+
+  .container {
+    padding-top: 40px;
+  }
+
+  .mainContent {
+    gap: 60px;
+  }
+
+  .description {
+    max-width: 360px;
+  }
+
+  .contentSection {
+    gap: 20px;
+  }
+
+  .innerContent {
+    gap: 20px;
+  }
+
+  .linksSection {
+    gap: 3rem;
+  }
+
+  .newsletter {
+    gap: 12px;
+  }
+
+  .emailInput {
+    padding: 8px;
+  }
+
+  .mapImage {
+    width: 180px;
+    height: auto;
+  }
+}
+
 @media (max-width: 768px) {
   .footer {
     padding: 0 24px;
