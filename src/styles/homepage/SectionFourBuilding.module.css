@@ -132,3 +132,23 @@
     display: none;
   }
 }
+
+@media (max-width: 1200px) {
+  .section4_building {
+    padding: 0 24px;
+  }
+
+  .desktop_layout {
+    gap: 16px;
+  }
+
+  .building_image {
+    border-radius: 6px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section4_building {
+    padding: 0 24px;
+  }
+}

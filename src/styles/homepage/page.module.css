@@ -4,6 +4,12 @@
   gap: 148px;
 }
 
+@media (max-width: 1200px) {
+  .container {
+    gap: 132px;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     gap: 120px;

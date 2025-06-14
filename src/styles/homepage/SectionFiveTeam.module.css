@@ -36,6 +36,21 @@
   line-height: 28px;
 }
 
+@media (max-width: 1200px) {
+  .section5_team {
+    padding: 0 24px;
+  }
+
+  .title {
+    max-width: 40%;
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
 @media (max-width: 768px) {
   .section5_team {
     padding: 0 24px;

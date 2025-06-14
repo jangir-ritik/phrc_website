@@ -79,11 +79,28 @@
 } */
 
 @media (max-width: 1200px) {
+  .section1_legacy {
+    margin: 0 24px;
+  }
+
   .container {
+    gap: 32px;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 40px;
   }
+
+  .description_container {
+    max-width: 100%;
+  }
+
+  /* .title_container {
+    max-width: 260px;
+  }
+
+  .description_container {
+    max-width: 600px;
+  } */
 }
 
 @media (max-width: 900px) {
@@ -111,6 +128,10 @@
 }
 
 @media (max-width: 768px) {
+  .section1_legacy {
+    margin: 0 24px;
+  }
+
   .container {
     align-items: flex-start;
   }

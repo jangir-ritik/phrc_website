@@ -66,6 +66,34 @@
   display: none;
 }
 
+@media (max-width: 1200px) {
+  .section6_newsletter {
+    padding: 0 24px;
+  }
+
+  .container {
+    padding: 40px;
+  }
+
+  .title_container {
+    max-width: 75%;
+  }
+
+  .description {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .form_container input {
+    max-width: 300px;
+  }
+
+  .image_container img {
+    max-width: 200px;
+    height: auto;
+  }
+}
+
 @media (max-width: 768px) {
   .section6_newsletter {
     padding: 0 24px;
