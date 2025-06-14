@@ -96,24 +96,26 @@ function Header() {
           role="navigation"
           aria-label="Main navigation"
         >
-          <div className={styles.headerNavLogoContainer}>
-            <Image
-              className={
-                isMenuOpen ? styles.headerNavLogoOpen : styles.headerNavLogo
-              }
-              src={logo_footer}
-              width={100}
-              height={90}
-              alt="PHRC Lifespace Organisation logo"
-            />
-            <button
-              className={styles.closeButton}
-              onClick={toggleMenu}
-              aria-label="Close navigation menu"
-            >
-              <Image src={closeIcon} width={40} height={40} alt="" />
-            </button>
-          </div>
+          {isMenuOpen && (
+            <div className={styles.headerNavLogoContainer}>
+              <Image
+                className={
+                  isMenuOpen ? styles.headerNavLogoOpen : styles.headerNavLogo
+                }
+                src={logo_footer}
+                width={100}
+                height={90}
+                alt="PHRC Lifespace Organisation logo"
+              />
+              <button
+                className={styles.closeButton}
+                onClick={toggleMenu}
+                aria-label="Close navigation menu"
+              >
+                <Image src={closeIcon} width={40} height={40} alt="" />
+              </button>
+            </div>
+          )}
           <ul
             className={
               isMenuOpen ? styles.headerNavListOpen : styles.headerNavList
