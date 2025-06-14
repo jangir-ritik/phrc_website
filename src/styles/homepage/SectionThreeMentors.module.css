@@ -98,20 +98,30 @@
   color: var(--textPrimary);
 }
 
-/* Tablet (768px and up) */
-@media (min-width: 768px) {
+/* Desktop (1024px and up) */
+@media (max-width: 1024px) {
   .mentors_container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
-/* Desktop (1024px and up) */
-@media (min-width: 1024px) {
-  /* .section3_mentors {
-    padding: 6rem 2rem;
-  } */
+/* Tablet (768px and up) */
+@media (max-width: 768px) {
+  .section3_mentors {
+    padding: 0 24px;
+    background-color: transparent;
+  }
+
+  .mentors_header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
 
   .mentors_container {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mentors_header_text {
   }
 }

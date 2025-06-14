@@ -35,3 +35,22 @@
   font-size: 18px;
   line-height: 28px;
 }
+
+@media (max-width: 768px) {
+  .section5_team {
+    padding: 0 24px;
+  }
+
+  .title {
+    max-width: 100%;
+  }
+
+  .container {
+    align-items: flex-start;
+  }
+
+  .title_container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

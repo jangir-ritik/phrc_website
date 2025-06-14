@@ -40,6 +40,9 @@ function SectionTwoDirectors() {
   return (
     <section className={styles.section2_directors}>
       <div className={styles.container}>
+        <h2 className={styles.section_title_mobile}>
+          From Director&apos;s Desk
+        </h2>
         {directors.map((director, index) => (
           <div
             key={index}
