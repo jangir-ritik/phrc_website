@@ -107,9 +107,9 @@
 
 /* Desktop (1024px and up) */
 @media (min-width: 1024px) {
-  .section3_mentors {
+  /* .section3_mentors {
     padding: 6rem 2rem;
-  }
+  } */
 
   .mentors_container {
     grid-template-columns: repeat(4, 1fr);

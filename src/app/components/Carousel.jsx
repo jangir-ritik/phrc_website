@@ -3,9 +3,9 @@ import React, { useState, useEffect, useCallback, useRef } from "react";
 import styles from "@/styles/Carousel.module.css";
 import clsx from "clsx";
 import Image from "next/image";
-import slide1 from "@/public/slides/slide1.png";
-import slide2 from "@/public/slides/slide2.png";
-import slide3 from "@/public/slides/slide3.png";
+import slide1 from "@/public/homepage/slides/slide1.png";
+import slide2 from "@/public/homepage/slides/slide2.png";
+import slide3 from "@/public/homepage/slides/slide3.png";
 
 const SLIDES = [
   {

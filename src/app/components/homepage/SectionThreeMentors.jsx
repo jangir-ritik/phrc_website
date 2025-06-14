@@ -1,9 +1,9 @@
 "use client";
 import React, { useState } from "react";
-import styles from "@/styles/SectionThreeMentors.module.css";
+import styles from "@/styles/homepage/SectionThreeMentors.module.css";
 import Image from "next/image";
 import clsx from "clsx";
-import Button from "./Button";
+import Button from "../Button";
 
 function SectionThreeMentors() {
   const [showAll, setShowAll] = useState(false);
@@ -13,62 +13,62 @@ function SectionThreeMentors() {
     {
       id: 1,
       name: "Shri. Harinarayan J. Rathi",
-      image: "/mentors/1.png",
+      image: "/homepage/mentors/1.png",
     },
     {
       id: 2,
       name: "Shri. Kiritbhai R. Shah",
-      image: "/mentors/2.png",
+      image: "/homepage/mentors/2.png",
     },
     {
       id: 3,
       name: "Shri. Mukunddas M. Kasat",
-      image: "/mentors/3.png",
+      image: "/homepage/mentors/3.png",
     },
     {
       id: 4,
       name: "Shri. Bhabutmal P. Jain",
-      image: "/mentors/4.png",
+      image: "/homepage/mentors/4.png",
     },
     {
       id: 5,
       name: "Shri. Prakash R. Dhariwal",
-      image: "/mentors/5.png",
+      image: "/homepage/mentors/5.png",
     },
     {
       id: 6,
       name: "Shri. Nainesh M. Nandu",
-      image: "/mentors/6.png",
+      image: "/homepage/mentors/6.png",
     },
     {
       id: 7,
       name: "Shri. Rajesh H. Shah",
-      image: "/mentors/7.png",
+      image: "/homepage/mentors/7.png",
     },
     {
       id: 8,
       name: "Shri. Ashok S. Oswal",
-      image: "/mentors/8.png",
+      image: "/homepage/mentors/8.png",
     },
     {
       id: 9,
       name: "Shri. Sujay U. Shah",
-      image: "/mentors/9.png",
+      image: "/homepage/mentors/9.png",
     },
     {
       id: 10,
       name: "Shri. Inder D. Jain",
-      image: "/mentors/10.png",
+      image: "/homepage/mentors/10.png",
     },
     {
       id: 11,
       name: "Shri. Lakhichand B. Khinvasaara",
-      image: "/mentors/11.png",
+      image: "/homepage/mentors/11.png",
     },
     {
       id: 12,
       name: "Shri. Aditya P. Lohia",
-      image: "/mentors/12.png",
+      image: "/homepage/mentors/12.png",
     },
   ];
 
@@ -81,9 +81,7 @@ function SectionThreeMentors() {
       <div className={styles.container}>
         <div className={styles.mentors_header}>
           <div className={styles.mentors_header_text}>
-            <h2 className={styles.title}>
-              Our Mentors
-            </h2>
+            <h2 className={styles.title}>Our Mentors</h2>
             <p className={styles.description}>
               Board of trustees of Poona Hospital and Research Centre
             </p>

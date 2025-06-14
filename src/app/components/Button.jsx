@@ -6,6 +6,7 @@ function Button({ children, variant = "primary", ...props }) {
   const variants = {
     primary: styles.primary,
     secondary: styles.secondary,
+    tertiary: styles.tertiary,
   };
   return (
     <button

@@ -1,6 +1,7 @@
 import { Archivo } from "next/font/google";
 
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import "./globals.css";
 
 const archivo = Archivo({
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
       <body className={archivo.className}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

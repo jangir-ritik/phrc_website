@@ -1,0 +1,37 @@
+.section5_team {
+  /* padding: 148px 120px; */
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.title_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.title {
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 400;
+  color: var(--textSecondary);
+  max-width: 30%;
+  text-wrap: balance;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 28px;
+}

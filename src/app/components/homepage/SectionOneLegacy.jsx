@@ -1,12 +1,12 @@
 import React from "react";
-import styles from "@/styles/SectionOneLegacy.module.css";
+import styles from "@/styles/homepage/SectionOneLegacy.module.css";
 import Image from "next/image";
-import legacy_image_1 from "@/public/legacy/1.png";
-import legacy_image_2 from "@/public/legacy/2.png";
-import legacy_image_3 from "@/public/legacy/3.png";
-import legacy_image_4 from "@/public/legacy/4.png";
+import legacy_image_1 from "@/public/homepage/legacy/1.png";
+import legacy_image_2 from "@/public/homepage/legacy/2.png";
+import legacy_image_3 from "@/public/homepage/legacy/3.png";
+import legacy_image_4 from "@/public/homepage/legacy/4.png";
 import clsx from "clsx";
-import Button from "./Button";
+import Button from "@/app/components/Button";
 
 export function SectionOneLegacy() {
   return (
@@ -35,7 +35,7 @@ export function SectionOneLegacy() {
           </p>
         </div>
       </div>
-      <div className={clsx(styles.legacy_image_container, styles.container)}>
+      <div className={clsx(styles.legacy_image_container)}>
         <Image
           className={styles.legacy_image}
           src={legacy_image_1}

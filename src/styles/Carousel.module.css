@@ -114,16 +114,34 @@
 }
 
 /* Responsive design improvements */
+
+@media (max-width: 1300px) and (min-width: 1200px) {
+  .slideContentContainer {
+    padding: 0 24px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .slideContentContainer {
+    padding: 0 24px;
+  }
+
+  .indicators {
+    padding: 0 24px;
+  }
+}
+
 @media (max-width: 768px) {
   .carousel {
     height: 500px;
   }
 
-  /* .slideContentContainer {
-  } */
-
   .slideContent {
     gap: 12px;
+  }
+
+  .slideImage {
+    object-position: 80% center !important;
   }
 
   .indicators {

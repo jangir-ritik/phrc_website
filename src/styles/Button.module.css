@@ -5,14 +5,14 @@
   font-weight: 400;
   transition: all 0.3s ease;
   height: fit-content;
+  padding: 10px 16px;
+  border-radius: 8px;
 }
 
 .primary {
   background-color: var(--primary);
   color: var(--background);
   border: none;
-  padding: 10px 16px;
-  border-radius: 8px;
 }
 
 .primary:hover {
@@ -24,11 +24,21 @@
   background-color: var(--background);
   color: var(--primary);
   border: 1px solid var(--primary);
-  padding: 10px 16px;
-  border-radius: 8px;
 }
 
 .secondary:hover {
   background-color: var(--primary);
   color: var(--background);
+}
+
+.tertiary {
+  background-color: var(--background);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.tertiary:hover {
+  background-color: var(--primary);
+  color: var(--background);
+  border: 1px solid var(--background);
 }

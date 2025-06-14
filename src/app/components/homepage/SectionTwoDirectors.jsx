@@ -1,11 +1,11 @@
 import React from "react";
-import styles from "@/styles/SectionTwoDirectors.module.css";
+import styles from "@/styles/homepage/SectionTwoDirectors.module.css";
 import clsx from "clsx";
 
 import Image from "next/image";
-import director1 from "@/public/directors/1_l.png";
-import director2 from "@/public/directors/2_l.png";
-import director3 from "@/public/directors/3_l.png";
+import director1 from "@/public/homepage/directors/1_l.png";
+import director2 from "@/public/homepage/directors/2_l.png";
+import director3 from "@/public/homepage/directors/3_l.png";
 
 function SectionTwoDirectors() {
   // left orientation means - image on the left, text on right
