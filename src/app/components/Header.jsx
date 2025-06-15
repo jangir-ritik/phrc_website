@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -14,7 +14,23 @@ import logo_footer from "@/public/common/phrc_logo_footer.png";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [isScrollingUp, setIsScrollingUp] = useState(true);
   const pathname = usePathname();
+
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      setScrollPosition(currentScrollY);
+      setIsScrollingUp(currentScrollY < lastScrollY || currentScrollY < 50);
+      lastScrollY = currentScrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const headerLinks = [
     {
@@ -65,7 +81,12 @@ function Header() {
   };
 
   return (
-    <header className={styles.header}>
+    <header
+      className={clsx(styles.header, {
+        [styles.headerHidden]: !isScrollingUp && scrollPosition > 100,
+        [styles.headerScrolled]: scrollPosition > 50,
+      })}
+    >
       <div className={styles.container}>
         <div className={styles.headerLogo}>
           <div className={styles.headerLogoInvisibleHolder} />
@@ -74,6 +95,7 @@ function Header() {
               src={logo}
               width={156}
               alt="PHRC Lifespace Organisation logo"
+              priority
             />
           </Link>
         </div>

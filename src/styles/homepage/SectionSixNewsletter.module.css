@@ -4,6 +4,7 @@
   flex-direction: column;
   gap: 24px;
   align-items: center;
+  margin: 0 24px;
 }
 
 .container {
@@ -67,10 +68,6 @@
 }
 
 @media (max-width: 1200px) {
-  .section6_newsletter {
-    padding: 0 24px;
-  }
-
   .container {
     padding: 40px;
   }
@@ -95,10 +92,6 @@
 }
 
 @media (max-width: 768px) {
-  .section6_newsletter {
-    padding: 0 24px;
-  }
-
   .container {
     padding: 22px 16px;
     flex-direction: column;
