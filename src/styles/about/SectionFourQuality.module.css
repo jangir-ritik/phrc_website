@@ -1,0 +1,64 @@
+.section4_quality {
+  display: flex;
+  justify-content: center;
+  padding: 0 24px;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.title {
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 400;
+  color: var(--textSecondary);
+}
+
+.commitments_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.commitment_card {
+  padding: 32px;
+  background-color: var(--foreground);
+  border-radius: 8px;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--textSecondary);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.commitment_card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1200px) {
+  .commitments_grid {
+    gap: 20px;
+  }
+
+  .commitment_card {
+    padding: 24px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .commitments_grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .commitment_card {
+    padding: 20px;
+  }
+}

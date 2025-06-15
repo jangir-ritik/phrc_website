@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 140px;
+  padding-top: 140px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding-top: 120px;
+    gap: 132px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    gap: 120px;
+  }
+}
