@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../Button";
 import styles from "@/styles/homepage/SectionFiveTeam.module.css";
+import Link from "next/link";
 
 function SectionFiveTeam() {
   return (
@@ -14,7 +15,9 @@ function SectionFiveTeam() {
             every step of our mission.
           </p>
         </div>
-        <Button>Learn More</Button>
+        <Link href="/about#section7_people">
+          <Button>Learn More</Button>
+        </Link>
       </div>
     </section>
   );

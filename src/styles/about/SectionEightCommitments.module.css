@@ -1,7 +1,9 @@
-.section4_quality {
+.section8_commitments {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  padding: 0 24px;
+  margin: 0 24px;
 }
 
 .container {
@@ -9,56 +11,101 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  align-items: center;
+  gap: 48px;
+}
+
+.content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 }
 
 .title {
   font-size: 36px;
-  line-height: 48px;
+  line-height: 42px;
   font-weight: 400;
   color: var(--textSecondary);
 }
 
+.description {
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--textPrimary);
+  font-weight: 300;
+}
+
 .commitments_grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
+  width: 100%;
 }
 
 .commitment_card {
+  background: var(--white);
   padding: 32px;
-  background-color: var(--foreground);
   border-radius: 8px;
-  font-size: 18px;
-  line-height: 28px;
-  color: var(--textSecondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 4px 6px #00000010;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .commitment_card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 12px #00000010;
 }
 
-@media (max-width: 1200px) {
-  .commitments_grid {
-    gap: 20px;
-  }
-
-  .commitment_card {
-    padding: 24px;
-    font-size: 16px;
-    line-height: 24px;
-  }
+.commitment_text {
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--textSecondary);
+  font-weight: 400;
 }
 
 @media (max-width: 768px) {
+  .container {
+    gap: 32px;
+    text-align: left;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .content {
+    text-align: left;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
   .commitments_grid {
     grid-template-columns: 1fr;
     gap: 16px;
   }
 
   .commitment_card {
-    padding: 20px;
+    padding: 24px;
+    text-align: left;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .commitment_text {
+    font-size: 16px;
+    line-height: 24px;
   }
 }

@@ -5,6 +5,9 @@ import SectionThreeHealthCity from "@/app/components/about/SectionThreeHealthCit
 import SectionFourVisionaries from "@/app/components/about/SectionFourVisionaries";
 import SectionEightCommitments from "@/app/components/about/SectionEightCommitments";
 import SectionTwoPurpose from "../components/about/SectionTwoPurpose";
+import SectionFiveVision from "../components/about/SectionFiveVision";
+import SectionSixCampus from "../components/about/SectionSixCampus";
+import SectionSevenPeople from "../components/about/SectionSevenPeople";
 
 export const metadata = {
   title: "About Us | PHRC Life",

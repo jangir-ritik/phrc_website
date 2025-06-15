@@ -1,26 +1,31 @@
 "use client";
 
 import React from "react";
-import styles from "@/styles/about/SectionFiveQuality.module.css";
+import styles from "@/styles/about/SectionEightCommitments.module.css";
 
-function SectionFiveQuality() {
+function SectionEightCommitments() {
   const commitments = [
-    "We are ISO certified and aligned with Indian & US NABH",
-    "Cost-effectively sustainable",
-    "Clinical transparency",
+    "Clinical quality and safety",
     "Ethical transparency",
-    "Regional & national outreach",
-    "Continuous patient feedback",
+    "Hygiene & infection control",
+    "Continuous patient feedback & audits",
   ];
 
   return (
-    <section className={styles.section5_quality}>
+    <section className={styles.section8_commitments}>
       <div className={styles.container}>
-        <h2 className={styles.title}>Quality Commitments</h2>
+        <div className={styles.content}>
+          <h2 className={styles.title}>Quality Commitments</h2>
+          <p className={styles.description}>
+            We are ISO-certified and aligned with NABH and NABL standards,
+            maintaining:
+          </p>
+        </div>
+
         <div className={styles.commitments_grid}>
           {commitments.map((commitment, index) => (
             <div key={index} className={styles.commitment_card}>
-              {commitment}
+              <span className={styles.commitment_text}>{commitment}</span>
             </div>
           ))}
         </div>
@@ -29,4 +34,4 @@ function SectionFiveQuality() {
   );
 }
 
-export default SectionFiveQuality;
+export default SectionEightCommitments;
