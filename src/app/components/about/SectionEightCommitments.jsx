@@ -1,9 +1,9 @@
 "use client";
 
 import React from "react";
-import styles from "@/styles/about/SectionFourQuality.module.css";
+import styles from "@/styles/about/SectionFiveQuality.module.css";
 
-function SectionFourQuality() {
+function SectionFiveQuality() {
   const commitments = [
     "We are ISO certified and aligned with Indian & US NABH",
     "Cost-effectively sustainable",
@@ -14,7 +14,7 @@ function SectionFourQuality() {
   ];
 
   return (
-    <section className={styles.section4_quality}>
+    <section className={styles.section5_quality}>
       <div className={styles.container}>
         <h2 className={styles.title}>Quality Commitments</h2>
         <div className={styles.commitments_grid}>
@@ -29,4 +29,4 @@ function SectionFourQuality() {
   );
 }
 
-export default SectionFourQuality;
+export default SectionFiveQuality;
